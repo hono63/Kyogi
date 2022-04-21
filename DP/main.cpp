@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <stdint.h>
-#include <atcoder/modint>
+#include "atcoder/modint"
 
 using namespace std;
 using mint = atcoder::modint998244353;
@@ -13,7 +13,7 @@ int main()
   
   cin >> N >> M >> K;
   
-  vector<vector<mint>> dp( N+1, vector(K, mint(0)) ); 
+  //vector<vector<mint>> dp( N+1, vector(K, mint(0)) ); 
   mint count; 
   count = 1;
   int sik = N - 1; // 仕切り
